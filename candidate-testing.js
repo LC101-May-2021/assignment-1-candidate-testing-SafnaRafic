@@ -12,7 +12,7 @@ let questions = ["Who was the first American woman in space? ", "True or false: 
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers = [];
 let numberOfQuizQuestions = questions.length;
-let numberOfCorrectQuestions = 0;
+
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -29,6 +29,7 @@ function askQuestion() {
 
 function gradeQuiz(candidateAnswers) {
   let grade = 0;
+  let numberOfCorrectQuestions = 0;
 
   console.log(`\n\nCandidate Name: ${candidateName}`);
   for (let i = 0; i < questions.length; i++) {
